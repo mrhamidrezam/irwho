@@ -9,7 +9,7 @@ description = "Fast, friendly WHOIS toolkit for .ir domains: availability checks
 readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.9"
-authors = [{ name = "Hamidreza", email = "you@example.com" }]
+authors = [{ name = "Hamidreza", email = "h4midrezam@gmail.com" }]
 keywords = [
     "whois",
     "irnic",
@@ -38,9 +38,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/USERNAME/irwho"
-Repository = "https://github.com/USERNAME/irwho"
-Issues = "https://github.com/USERNAME/irwho/issues"
+Homepage = "https://github.com/Hamidreza/irwho"
+Repository = "https://github.com/Hamidreza/irwho"
+Issues = "https://github.com/Hamidreza/irwho/issues"
 
 [project.scripts]
 irwho = "irwho.cli:main"
