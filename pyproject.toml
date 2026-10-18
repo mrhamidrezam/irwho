@@ -38,9 +38,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Hamidreza/irwho"
-Repository = "https://github.com/Hamidreza/irwho"
-Issues = "https://github.com/Hamidreza/irwho/issues"
+Homepage = "https://github.com/mrhamidrezam/irwho"
+Repository = "https://github.com/mrhamidrezam/irwho"
+Issues = "https://github.com/mrhamidrezam/irwho/issues"
 
 [project.scripts]
 irwho = "irwho.cli:main"
