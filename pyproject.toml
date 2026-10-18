@@ -1,0 +1,63 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "irwho"
+dynamic = ["version"]
+description = "Fast, friendly WHOIS toolkit for .ir domains: availability checks, resumable scans and smart name generation."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+authors = [{ name = "Hamidreza", email = "you@example.com" }]
+keywords = [
+    "whois",
+    "irnic",
+    "domain",
+    "domain-name",
+    "availability",
+    "ir",
+    "tld",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: Name Service (DNS)",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/USERNAME/irwho"
+Repository = "https://github.com/USERNAME/irwho"
+Issues = "https://github.com/USERNAME/irwho/issues"
+
+[project.scripts]
+irwho = "irwho.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "build>=1.2", "twine>=5"]
+
+[tool.hatch.version]
+path = "src/irwho/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/irwho"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
