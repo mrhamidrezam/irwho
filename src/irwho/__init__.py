@@ -20,7 +20,7 @@ from .models import Info, Result, Status
 from .namer import generate, normalize, score, to_domains
 from .whois import WhoisClient
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 __all__ = [
     "Cache",
